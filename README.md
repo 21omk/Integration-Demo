@@ -1,5 +1,7 @@
 # Registration Module - React Application
 
+[![Lint, Build, and Deploy](https://github.com/21omk/Integration-Demo/actions/workflows/deploy.yml/badge.svg)](https://github.com/21omk/Integration-Demo/actions/workflows/deploy.yml)
+
 A complete registration and authentication system built with React and TypeScript, featuring a login page, registration page, and dashboard.
 
 ## 🌟 Features
@@ -120,7 +122,26 @@ src/
 
 ## 🚀 Deployment
 
-The app can be deployed to any static hosting service:
+### GitHub Pages (Automated)
+
+This project includes a GitHub Actions workflow that automatically:
+1. **Lints** the code with ESLint
+2. **Tests** the application
+3. **Builds** the production bundle
+4. **Deploys** to GitHub Pages
+
+The workflow runs on every push to the `main` branch and pull request.
+
+**Setup GitHub Pages:**
+1. Go to repository Settings → Pages
+2. Under "Build and deployment" → Source, select "GitHub Actions"
+3. Push to `main` branch to trigger deployment
+
+The app will be available at: `https://21omk.github.io/Integration-Demo`
+
+### Manual Deployment
+
+The app can also be deployed to any static hosting service:
 
 ```bash
 npm run build
